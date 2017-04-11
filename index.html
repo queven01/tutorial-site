@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My First Site</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+	</script>
+</head>
+<body>
+	<header>
+		<div class="container clearfix">
+			<nav>
+				<div class="logo">
+					<img src="images/logo.png" alt="The Logo">
+				</div>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="big-image">
+			<h1>EXPLORE THE DEEP BLUE!</h1>
+			<h3>Know more of the wonders!</h3>
+			<p>
+				<a href="#about">Learn More</a>
+			</p>
+		</div>
+		<div id="home">
+			<div class="container clearfix">
+				<h2>
+					Many Adventures
+				</h2>
+				<div class="half">
+					<h3>Scuba Diving</h3>
+					<p>
+						Vel id nibh aeque soleat. Harum dignissim sed eu, illud option epicuri mel ne. Case repudiare ea vis, pri id paulo voluptaria, ei falli dicit doming vim. Postea virtute eos ad, liber commune qui at. Brute aliquando eu vel, est rebum adipiscing at. Dico delenit fierent cu nec, nihil veniam vix ei.
+					</p>
+					<p class="more">
+						<a href="#">More</a>
+					</p>
+				</div>
+				<div class="half">
+					<h3>Deep Sea Fishing</h3>
+					<p>
+						Lorem ipsum dolor sit amet, ne epicuri dissentiunt neglegentur mei. Ei est atqui audire. Eu duo case eruditi detracto, te nisl nonumy nominati nam. Modus iriure an per, essent mandamus eam et. Usu dico nostro cotidieque eu. Nec saperet vivendo ex, eu sed vidit modus nominavi.
+					</p>
+					<p class="more" >
+						<a href="#">More</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="about">
+			<div class="container clearfix">
+				<h2>Ocean's History</h2>
+				<div class="clearfix">
+					<p>
+						Saline water covers approximately 72% of the planet's surface (~3.6×108 km2) and is customarily divided into several principal oceans and smaller seas, with the ocean covering approximately 71% of Earth's surface and 90% of the Earth's biosphere.[6] The ocean contains 97% of Earth's water, and oceanographers have stated that less than 5% of the World Ocean has been explored.[6] The total volume is approximately 1.35 billion cubic kilometers (320 million cu mi) with an average depth of nearly 3,700 meters (12,100 ft).[7][8][9]
+					</p>
+					<p class="side-text">
+						As the world ocean is the principal component of Earth's hydrosphere, it is integral to all known life, forms part of the carbon cycle, and influences climate and weather patterns. The world ocean is the habitat of 230,000 known species, but because much of it is unexplored, the number of species that exist is much larger, possibly over two million.[10] The origin of Earth's oceans remains unknown; oceans are thought to have formed in the Hadean period and may have been the impetus for the emergence of life.
+					</p>
+					<p class="side-image">
+						<img src="images/ocean.jpg">
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="contact">
+			<div class="container clearfix">
+				<div class="three-parts">
+					<h2>Oceans around the Globe</h2>
+					<ul>
+						<li>Atlantic Ocean.</li>
+						<li>Arctic Ocean.</li>
+						<li>Southern Ocean.</li>
+						<li>Indian Ocean.</li>
+						<li>Pacific Ocean.</li>
+					</ul>
+				</div>
+				<div class="three-parts">
+					<h2>Contact Info</h2>
+					<p>
+						Hey if you want to learn more about the wonders of the ocean give us a call or email! We always have classes and are always read for new teams to go on adventures with!
+					</p>
+				</div>
+				<div class="three-parts">
+					<h2>You Information</h2>
+					<form>
+						<p class="form-group">
+							<label for="name">Name</label>
+							<input type="text" name="name">
+						</p>
+						<p class="form-group">
+							<label for="name">Email</label>
+							<input type="text" name="email">
+						</p>
+						<p class="form-group">
+							<label>Message</label>
+							<textarea></textarea>
+						</p>
+						<p class="form-group submit">
+							<input type="submit" name="submit" value="Submit">
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>	
+	</main>
+	<footer>
+		<div class="container">
+			<div>
+				<p>First Website and Design by Kevin Correa</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
