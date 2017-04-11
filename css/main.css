@@ -1,0 +1,230 @@
+/*
+My first website and design by Kevin Correa
+*/
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+    *zoom: 1;
+}
+
+/*Main Structure of Website*/
+html {
+	font-size: 16px;
+	font-family: sans-serif;
+}
+body{
+	margin: 0px;
+}
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+.half {
+	width: 50%;
+	box-sizing: border-box;
+	padding: 20px;
+	float: left;
+}
+.three-parts {
+	width: 33.33%;
+	box-sizing: border-box;
+	padding: 20px;
+	float: left;
+}
+/*Header and Navigation*/
+header {
+	background-color: #04337e;
+}
+header nav ul {
+	list-style-type: none;
+	float: right;
+	padding: 20px 0px;
+}
+header nav ul li {
+	display: inline-block;
+	margin-right: 15px;
+}
+header nav ul li a {
+	padding: 25px 20px;
+	text-decoration: none;
+	color: white;
+	transition-duration: .5s;
+}
+header nav ul li a:hover {
+	background: #0297EA;
+	color: #010F53;
+	cursor: pointer;
+}
+header .logo {
+	padding: 10px 0px;
+	float: left;
+}
+.logo img {
+	width: 65px;
+}
+/*Big Image*/
+main .big-image {
+	background-color: #eee;
+	height: 300px;
+	padding: 40px 0px;
+}
+.big-image {
+	background-image: url("../images/background.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+main .big-image h1 {
+	margin-top: 50px;
+	font-size: 35px;
+	color: white;
+	text-shadow: 1px 1px 5px black;
+}
+main .big-image h3{
+	text-shadow: 1px 1px 5px black;
+	color: white;
+}
+main .big-image p {
+	margin-top: 40px;
+}
+main .big-image p a {
+	text-decoration: none;
+	color: white;
+	background: orange;
+	padding: 20px 30px;
+	font-size: 20px;
+	margin-top: 30px;
+	border-radius: 4px;
+}
+/*All Sections*/
+.container h2, .container h3{
+	text-align: center;
+}
+
+/*Section Home*/
+div#home{
+	padding: 30px 0px;
+	min-height: 200px;
+}
+.container .more {
+	text-align: center;
+	margin-top: 40px;
+}
+.more a {
+	text-decoration: none;
+	color: white;
+	background: orange;
+	padding: 10px 20px;
+	font-size: 20px;
+	border-radius: 4px; 
+}
+/*Section About*/
+div#about{
+	padding: 30px 0px;
+	min-height: 200px;
+	background: #0f68c8;
+	color: #fefefe;
+}
+div#about p.side-text{
+	float: left;
+	width: 50%;
+}
+div#about p.side-image{
+	float: left;
+    width: 50%;
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+}
+div#about p.side-image img{
+	width: 295px;
+}
+/*Section Contact*/
+div#contact{
+	padding: 30px 0px;
+	min-height: 200px;
+}
+form label {
+	display: inline-block;
+	font-weight: bold;
+}
+form input[type="text"] {
+	width: 100%;
+	height: 25px;
+}
+form textarea {
+	width: 100%;
+	height: 150px;
+}
+form .submit input {
+	text-decoration: none;
+	color: white;
+	background: orange;
+	padding: 10px 20px;
+	font-size: 20px;
+	border: none;
+	border-radius: 4px; 
+}
+form .submit {
+	text-align: center;
+}
+/*Footer */
+footer {
+	padding: 20px 0px;
+	height: 100px;
+	background: #00173c;
+	color: white;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
